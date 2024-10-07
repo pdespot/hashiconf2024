@@ -19,7 +19,7 @@ data "local_file" "ssh_key" {
 }
 
 data "local_file" "api_key" {
-  filename = "./api.key"
+  filename = "/root/api.key"
 }
 
 locals {
