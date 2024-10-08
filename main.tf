@@ -55,3 +55,7 @@ resource "linode_instance" "terraform-web" {
         tags = toset([var.userid])
         authorized_keys = [local.sanitized_ssh_key]
 }
+
+output "ip_address" {
+  value = [for vm in linode_instance.linode : "${vm.ipv4}"]
+}
