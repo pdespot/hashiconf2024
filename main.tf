@@ -57,5 +57,5 @@ resource "linode_instance" "terraform-web" {
 }
 
 output "ip_address" {
-  value = [for vm in linode_instance.linode : "${vm.ipv4}"]
+  value = [for vm in linode_instance.terraform-web : "${vm.ipv4}"]
 }
