@@ -1,2 +1,2 @@
-regions = ["us-central", "de-fra-2", "us-east"]
+regions = ["us-central", "jp-osa"]
 userid = "HashiConf2024"
